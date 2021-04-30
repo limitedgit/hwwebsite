@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import * as tf from '@tensorflow/tfjs';
+
+async function loadModel() {
+  const model = await tf.loadLayersModel('https://github.com/limitedgit/hwwebsite/blob/main/models/model.json')
+  return model;
+}
+
+const model = loadModel();
 
 function App() {
   return (
