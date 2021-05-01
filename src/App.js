@@ -12,6 +12,7 @@ async function loadModel() {
 const model = loadModel();
 //use model to predict stuff
 //TODO
+console.log(model);
 
 
 function App() {
