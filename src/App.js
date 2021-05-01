@@ -5,7 +5,7 @@ import * as tf from '@tensorflow/tfjs';
 
 // asynchronous function for loading in model
 async function loadModel() {
-  const model = await tf.loadLayersModel('https://github.com/limitedgit/hwwebsite/blob/main/models/model.json')
+  const model = await tf.loadLayersModel('models/model.json')
   return model;
 }
 
