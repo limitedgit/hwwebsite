@@ -1,4 +1,4 @@
-import logo, { ReactComponent } from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import * as tf from '@tensorflow/tfjs';
 
