@@ -1,29 +1,38 @@
-import logo from './logo.svg';
+import logo, { ReactComponent } from './logo.svg';
 import './App.css';
 import * as tf from '@tensorflow/tfjs';
 
+
+// asynchronous function for loading in model
 async function loadModel() {
   const model = await tf.loadLayersModel('https://github.com/limitedgit/hwwebsite/blob/main/models/model.json')
   return model;
 }
 
 const model = loadModel();
+//use model to predict stuff
+//TODO
+
 
 function App() {
+ 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to modern web development.
+          Please upload a picture. 
+   
         </p>
+        <input type="file" />
+        
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="github link"
+          href="https://github.com/limitedgit/hwwebsite"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          github page
         </a>
       </header>
     </div>
